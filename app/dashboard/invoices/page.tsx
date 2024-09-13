@@ -1,6 +1,3 @@
-
-
-
-export default function Page () {
-  return <>Hello Invoices</>
+export default function Page() {
+  return <>Hello Invoices</>;
 }
