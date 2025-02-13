@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xxlg': '36px',
+      },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        bgCover: '#010c11'
+        bgCover: '#010c11',
+        highlight: "#fe7800",
+        darkSecondary: "#e4e4e4",
+        darkPrimary: "#000000",
       },
     },
     keyframes: {

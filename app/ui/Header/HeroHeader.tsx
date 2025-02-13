@@ -1,5 +1,4 @@
-import Header from "@/app/ui/shared/Header";
-import Image from 'next/image';
+import Header from "@/app/ui/Header/Header";
 
 export default function HeroHeader () {
   return (
