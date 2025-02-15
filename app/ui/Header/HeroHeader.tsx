@@ -1,6 +1,7 @@
 import Header from "@/app/ui/Header/Header";
 import Tick from "@/app/ui/Components/Tick";
 import CTA from "@/app/ui/Components/CTA";
+import Profile from "@/app/ui/Components/Profile";
 
 export default function HeroHeader () {
   return (
@@ -13,20 +14,7 @@ export default function HeroHeader () {
       <Header/>
       <div className="w-full h-fit flex-col justify-center items-center gap-20 inline-flex my-14">
         <div className="max-w-[750px] h-fit flex-col justify-start items-center gap-8 flex">
-          <div className="justify-start items-center gap-3 inline-flex">
-            <div className="w-[60px] h-[60px] bg-[#d9d9d9] rounded-full"/>
-            <div className="flex-col justify-start items-start gap-0.5 inline-flex">
-              <div className="justify-center items-center gap-5 inline-flex">
-                <div
-                  className="w-fit text-white text-xl font-semibold font-['Plus Jakarta Sans'] tracking-tight">Alexandr
-                  Lerem
-                </div>
-              </div>
-              <div className="text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">Handyman
-                Executive
-              </div>
-            </div>
-          </div>
+          <Profile/>
           <div className="self-stretch flex-col justify-start items-center gap-12 flex">
             <div className="self-stretch flex-col justify-start items-center gap-5 flex">
               <div

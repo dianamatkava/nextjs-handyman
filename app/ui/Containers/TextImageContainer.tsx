@@ -2,25 +2,20 @@ import AchievementItem from "@/app/ui/shared/AchievementItem";
 import SectionHeader from "@/app/ui/shared/SectionHeader";
 import CTAContactMe from "@/app/ui/Components/CTAContactMe";
 import Image from "next/image";
+import Profile from "@/app/ui/Components/Profile";
 
 export default function TextImageContainer() {
   return (
     <div className="w-full full justify-center items-center gap-8 inline-flex">
       <div className="w-1/2 h-fit flex-col justify-start items-start gap-5 inline-flex">
-        <SectionHeader name={"My Expertise"}/>
-        <div className="self-stretch h-fit flex-col justify-between items-start flex gap-5">
-          <div className="self-stretch h-fit flex-col justify-start items-start gap-5 flex">
+        <SectionHeader name={"About Me"}/>
+        <div className="self-stretch h-fit flex-col justify-between items-start flex gap-10">
+          <div className="self-stretch h-fit flex-col justify-start items-start gap-8 flex">
             <div className="self-stretch justify-start items-center gap-4 inline-flex">
               <div
-                className="w-full text-black text-xxlg font-semibold font-['Plus Jakarta Sans'] leading-[50px]">Professional
-                Handyman providing reliable repair services
+                className="w-full text-black text-lg font-semibold font-['Plus Jakarta Sans']">"Professional
+                Handyman providing reliable repair services"
               </div>
-            </div>
-            <div className="justify-start items-center gap-5 inline-flex">
-              <AchievementItem key={1} title={'Availability'} score={'24/7'}/>
-              <AchievementItem key={2} title={'Certifications'} score={'11'}/>
-              <AchievementItem key={3} title={'Response Time'} score={'4h'}/>
-              <AchievementItem key={4} title={'Satisfied Clients'} score={'98%'}/>
             </div>
             <div className="w-full text-black text-sm font-normal font-['Open Sans'] tracking-tight">Contrary to
               popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
@@ -29,8 +24,14 @@ export default function TextImageContainer() {
               Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
               undoubtable source.
             </div>
+            <div className="justify-start items-center gap-5 inline-flex">
+              <AchievementItem key={1} title={'Availability'} score={'24/7'}/>
+              <AchievementItem key={2} title={'Certifications'} score={'11'}/>
+              <AchievementItem key={3} title={'Response Time'} score={'4h'}/>
+              <AchievementItem key={4} title={'Satisfied Clients'} score={'98%'}/>
+            </div>
           </div>
-          <CTAContactMe />
+          <CTAContactMe/>
         </div>
       </div>
       <div className="w-1/2 h-[500px] rounded-lg relative p-4 overflow-hidden">
