@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontSize: {
         'xxlg': '36px',
+        'xlg': '24px',
       },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
