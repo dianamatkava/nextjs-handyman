@@ -1,4 +1,4 @@
-import Tag from "@/app/ui/Tag";
+import Tag from "@/app/ui/Components/Tag";
 
 export default function ActiveService () {
   return (
@@ -8,9 +8,9 @@ export default function ActiveService () {
       </div>
       <div
         className="border-b border-black flex-col justify-center items-start gap-4 inline-flex pb-6">
-        <div className="flex-col justify-start items-start gap-[15px] flex">
+        <div className="w-fit flex-col justify-start items-start gap-[15px] flex">
           <div
-            className="pl-1 text-center text-black text-xxlg font-semibold font-['Plus Jakarta Sans'] tracking-tight">Water
+            className="pl-1 text-black text-xxlg font-semibold font-['Plus Jakarta Sans']">Water
             Damage Restoration
           </div>
           <div className="justify-start items-center gap-1.5 inline-flex">

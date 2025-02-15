@@ -6,7 +6,7 @@ export default function ServiceItem ({title, number}: {title: string, number: st
       </div>
       <div
         className="w-full h-fit py-5 border-b border-black flex-col justify-center items-start inline-flex">
-          <div className="text-center text-black text-xlg font-normal font-['Plus Jakarta Sans'] tracking-tight">{title}</div>
+          <div className="text-black text-xlg font-normal font-['Plus Jakarta Sans'] tracking-tight">{title}</div>
       </div>
     </div>
   )

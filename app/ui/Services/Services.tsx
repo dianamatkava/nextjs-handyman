@@ -1,24 +1,33 @@
 import ServiceItem from "@/app/ui/Services/ServiceItem";
 import ActiveService from "@/app/ui/Services/ActiveService";
 import SectionHeader from "@/app/ui/shared/SectionHeader";
+import Image from "next/image";
 
-export default function Services () {
+export default function Services() {
   return (
-    <div className='w-full h-full flex flex-col items-start justify-start gap-4'>
-    <SectionHeader name={"Services"} />
-    <div className="w-full h-fit inline-flex justify-start items-start gap-8">
-      <div className="w-2/3 max-w-[800px] h-fit flex-col justify-start items-start inline-flex">
-        <ActiveService/>
-        <div className="w-full h-fit flex-col justify-start items-start inline-flex">
-          <ServiceItem key={1} number={"01"} title="House Remodeling"/>
-          <ServiceItem key={2} number={"02"} title="Plumbing Service"/>
-          <ServiceItem key={3} number={"03"} title="Water Damage Restoration"/>
-          <ServiceItem key={4} number={"04"} title="Plumbing Service"/>
-          <ServiceItem key={5} number={"05"} title="Water Damage Restoration"/>
+    <div className="w-full h-full flex flex-col items-start justify-start gap-4">
+      <SectionHeader name={"Services"} />
+      <div className="w-full flex gap-12 items-stretch">
+        <div className="w-2/3 max-w-[800px] flex flex-col gap-4">
+          <ActiveService />
+          <div className="flex flex-col gap-2">
+            <ServiceItem key={1} number={"01"} title="House Remodeling" />
+            <ServiceItem key={2} number={"02"} title="Plumbing Service" />
+            <ServiceItem key={3} number={"03"} title="Water Damage Restoration" />
+            <ServiceItem key={4} number={"04"} title="Plumbing Service" />
+            <ServiceItem key={5} number={"05"} title="Water Damage Restoration" />
+          </div>
+        </div>
+        <div className="w-2/5 relative p-4 overflow-hidden bg-black rounded-lg">
+          <Image
+            src="/Image1.jpeg"
+            alt="Experties"
+            fill
+            style={{ objectFit: "cover" }}
+            className="rounded-[inherit]"
+          />
         </div>
       </div>
-      <div className="w-1/3 h-[630px] bg-neutral-100 rounded-[25px]"/>
     </div>
-    </div>
-  )
+  );
 }
