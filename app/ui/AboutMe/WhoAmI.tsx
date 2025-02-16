@@ -1,10 +1,13 @@
 import Image from "next/image";
 import SectionHeader from "@/app/ui/Components/SectionHeader";
+import {IoPersonSharp} from "react-icons/io5";
 
 export default function WhoAmI () {
   return (
     <div className="w-full h-fit flex-col justify-start items-center gap-10 inline-flex">
-      <SectionHeader name={'Who am I?'}/>
+      <SectionHeader name={'Who am I?'}>
+        <IoPersonSharp size={16} color={'#fe7800'}/>
+      </SectionHeader>
       <div className="self-stretch justify-start items-center gap-4 inline-flex">
         <div className="grow shrink basis-0 h-fit justify-between items-center flex">
           <div className="w-1/2 text-black text-xxlg font-semibold font-['Plus Jakarta Sans'] leading-[45px]">

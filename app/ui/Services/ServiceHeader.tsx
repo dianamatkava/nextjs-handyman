@@ -1,10 +1,13 @@
 import AchievementItem from "@/app/ui/Components/AchievementItem";
 import SectionHeader from "@/app/ui/Components/SectionHeader";
+import {MdBuild} from "react-icons/md";
 
 export default function ServiceHeader () {
   return (
     <div className="w-full h-fil flex-col justify-center items-center gap-5 inline-flex">
-      <SectionHeader name="Services"/>
+      <SectionHeader name="Services">
+        <MdBuild size={16} color={'#fe7800'}/>
+      </SectionHeader>
       <div className="w-full justify-center items-center inline-flex">
         <div className="w-fit text-black text-xxlg font-semibold font-['Plus Jakarta Sans']">Some of the services I provide
         </div>

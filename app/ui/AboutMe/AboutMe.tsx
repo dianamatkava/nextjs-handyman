@@ -1,11 +1,14 @@
 import Image from "next/image";
 import CTAGroup from "@/app/ui/Components/CTAGroup";
 import SectionHeader from "@/app/ui/Components/SectionHeader";
+import {IoPersonSharp} from "react-icons/io5";
 
 export default function AboutMe() {
   return (
     <div className="w-full full justify-center items-center gap-8 flex flex-col">
-      <SectionHeader name={"About Me"}/>
+      <SectionHeader name={"About Me"}>
+        <IoPersonSharp size={16} color={'#fe7800'}/>
+      </SectionHeader>
       <div className="w-full full justify-center items-center gap-8 inline-flex">
         <div className="w-1/2 h-fit flex-col justify-start items-start gap-5 inline-flex">
           <div className="self-stretch h-fit flex-col justify-between items-start flex gap-10">
