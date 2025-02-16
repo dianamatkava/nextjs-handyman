@@ -10,8 +10,8 @@ export default function Page() {
     <main className="w-full h-full flex justify-center items-start min-h-screen flex-col px-20 py-8 gap-20">
       <WhoAmI/>
       <Services/>
-      <AboutMe/>
       <ContactUsBlock/>
+      <AboutMe/>
       <Testimonial/>
       <ContactUs/>
     </main>

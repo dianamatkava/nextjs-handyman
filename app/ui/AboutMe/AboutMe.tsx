@@ -41,7 +41,7 @@ export default function AboutMe() {
         <div className="w-1/2 h-[400px] rounded-lg relative p-4 overflow-hidden">
           <div className="absolute inset-0 rounded-[inherit]">
             <Image
-              src="/Image1.jpeg"
+              src="/Contract.jpg"
               alt="Experties"
               fill
               style={{objectFit: 'cover'}}

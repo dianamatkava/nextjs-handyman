@@ -19,7 +19,7 @@ export default function WhoAmI () {
       <div className="w-full h-[400px] rounded-lg relative p-4 overflow-hidden">
         <div className="absolute inset-0 rounded-[inherit]">
           <Image
-            src="/Image1.jpeg"
+            src="/WhoAmI.jpg"
             alt="Experties"
             fill
             style={{objectFit: 'cover'}}

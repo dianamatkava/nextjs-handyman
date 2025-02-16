@@ -15,12 +15,12 @@ export default function Services() {
             <ServiceItem key={2} number={"02"} title="Plumbing Service" />
             <ServiceItem key={3} number={"03"} title="Water Damage Restoration" />
             <ServiceItem key={4} number={"04"} title="Plumbing Service" />
-            {/*<ServiceItem key={5} number={"05"} title="Water Damage Restoration" />*/}
+            <ServiceItem key={5} number={"05"} title="Water Damage Restoration" />
           </div>
         </div>
         <div className="w-2/5 relative p-4 overflow-hidden bg-black rounded-lg">
           <Image
-            src="/Image1.jpeg"
+            src="/Service1.jpg"
             alt="Experties"
             fill
             style={{ objectFit: "cover" }}
