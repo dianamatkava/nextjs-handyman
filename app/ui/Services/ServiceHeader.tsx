@@ -1,5 +1,5 @@
-import SectionHeader from "@/app/ui/shared/SectionHeader";
-import AchievementItem from "@/app/ui/shared/AchievementItem";
+import AchievementItem from "@/app/ui/Components/AchievementItem";
+import SectionHeader from "@/app/ui/Components/SectionHeader";
 
 export default function ServiceHeader () {
   return (

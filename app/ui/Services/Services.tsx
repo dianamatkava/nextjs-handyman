@@ -1,6 +1,5 @@
 import ServiceItem from "@/app/ui/Services/ServiceItem";
 import ActiveService from "@/app/ui/Services/ActiveService";
-import SectionHeader from "@/app/ui/shared/SectionHeader";
 import Image from "next/image";
 import ServiceHeader from "@/app/ui/Services/ServiceHeader";
 

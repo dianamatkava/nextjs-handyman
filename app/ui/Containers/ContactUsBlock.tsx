@@ -1,6 +1,6 @@
-import CTAContactMe from "@/app/ui/Components/CTAContactMe";
 import Tick from "@/app/ui/Components/Tick";
 import Image from 'next/image';
+import CTAGroup from "@/app/ui/Components/CTAGroup";
 
 export default function ContactUsBlock () {
   return (
@@ -29,8 +29,19 @@ export default function ContactUsBlock () {
               <Tick key={6} title={'24/7 Emergency Repair Services'}/>
             </div>
           </div>
-          <CTAContactMe mode={'dark'} />
-      </div>
+          <CTAGroup>
+            <div className="w-fit h-full flex-col justify-center items-start gap-1 inline-flex">
+              <div
+                className="self-stretch text-white text-sm font-semibold font-['Plus Jakarta Sans']">Contact
+                me
+              </div>
+              <div
+                className="self-stretch text-white text-sm font-normal font-['Plus Jakarta Sans']">
+                +01 1 26-55-56-00
+              </div>
+            </div>
+          </CTAGroup>
+        </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
-import SectionHeader from "@/app/ui/shared/SectionHeader";
 import Image from "next/image";
+import SectionHeader from "@/app/ui/Components/SectionHeader";
 
 export default function WhoAmI () {
   return (

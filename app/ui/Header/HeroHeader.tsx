@@ -1,6 +1,6 @@
 import Header from "@/app/ui/Header/Header";
 import Tick from "@/app/ui/Components/Tick";
-import CTAAvailable from "@/app/ui/Components/CTAAvailable";
+import CTAGroup from "@/app/ui/Components/CTAGroup";
 import Profile from "@/app/ui/Components/Profile";
 
 export default function HeroHeader () {
@@ -14,7 +14,7 @@ export default function HeroHeader () {
       <Header/>
       <div className="w-full h-fit flex-col justify-center items-center gap-20 inline-flex my-14">
         <div className="max-w-[750px] h-fit flex-col justify-start items-center gap-8 flex">
-          <Profile/>
+          <Profile mode={'dark'} name={'Alexandr Lorem'} title={'Handyman'}/>
           <div className="self-stretch flex-col justify-start items-center gap-12 flex">
             <div className="self-stretch flex-col justify-start items-center gap-5 flex">
               <div
@@ -54,7 +54,12 @@ export default function HeroHeader () {
                 </div>
               </div>
             </div>
-            <CTAAvailable />
+            <CTAGroup>
+              <div
+                className="text-center text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">Available
+                24/7
+              </div>
+            </CTAGroup>
           </div>
         </div>
         <div className="max-w-[850px] inline-flex items-center justify-center">

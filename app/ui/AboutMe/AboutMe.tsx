@@ -1,6 +1,6 @@
-import SectionHeader from "@/app/ui/shared/SectionHeader";
-import CTAContactMe from "@/app/ui/Components/CTAContactMe";
 import Image from "next/image";
+import CTAGroup from "@/app/ui/Components/CTAGroup";
+import SectionHeader from "@/app/ui/Components/SectionHeader";
 
 export default function AboutMe() {
   return (
@@ -24,7 +24,18 @@ export default function AboutMe() {
                 undoubtable source.
               </div>
             </div>
-            <CTAContactMe/>
+            <CTAGroup>
+              <div className="w-fit h-full flex-col justify-center items-start gap-1 inline-flex">
+                <div
+                  className="self-stretch text-black text-sm font-semibold font-['Plus Jakarta Sans']">Contact
+                  me
+                </div>
+                <div
+                  className="self-stretch text-black text-sm font-normal font-['Plus Jakarta Sans']">
+                  +01 1 26-55-56-00
+                </div>
+              </div>
+            </CTAGroup>
           </div>
         </div>
         <div className="w-1/2 h-[400px] rounded-lg relative p-4 overflow-hidden">

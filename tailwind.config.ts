@@ -12,6 +12,20 @@ const config: Config = {
         'xxlg': '36px',
         'xlg': '24px',
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' }
+        }
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+        marqueeReverse: 'marqueeReverse 10s linear infinite',
+      },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
