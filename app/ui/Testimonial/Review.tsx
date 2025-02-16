@@ -9,7 +9,7 @@ export default function Review () {
         <Profile name={'Lorem Ipsum'} title={'House Remodeling'}/>
         <StartRating rating={4}/>
       </div>
-      <div className="w-[350px] text-black text-sm font-normal font-['Open Sans'] tracking-tight">College in Virginia,
+      <div className="w-[350px] text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">College in Virginia,
         looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
         cites of the word in classical literature, discovered the undoubtable source.
       </div>

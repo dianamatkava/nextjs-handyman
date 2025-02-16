@@ -1,9 +1,9 @@
 import Services from "@/app/ui/Services/Services";
 import ContactUsBlock from "@/app/ui/Containers/ContactUsBlock";
-import Form from "@/app/ui/Form/Form";
 import WhoAmI from "@/app/ui/AboutMe/WhoAmI";
 import AboutMe from "@/app/ui/AboutMe/AboutMe";
 import Testimonial from "@/app/ui/Testimonial/Testimonial";
+import ContactUs from "@/app/ui/ContactUs/ContactUs";
 
 export default function Page() {
   return (
@@ -13,7 +13,7 @@ export default function Page() {
       <AboutMe/>
       <ContactUsBlock/>
       <Testimonial/>
-      <Form/>
+      <ContactUs/>
     </main>
   );
 }
