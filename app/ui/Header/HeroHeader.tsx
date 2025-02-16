@@ -1,6 +1,6 @@
 import Header from "@/app/ui/Header/Header";
 import Tick from "@/app/ui/Components/Tick";
-import CTA from "@/app/ui/Components/CTA";
+import CTAAvailable from "@/app/ui/Components/CTAAvailable";
 import Profile from "@/app/ui/Components/Profile";
 
 export default function HeroHeader () {
@@ -54,7 +54,7 @@ export default function HeroHeader () {
                 </div>
               </div>
             </div>
-            <CTA />
+            <CTAAvailable />
           </div>
         </div>
         <div className="max-w-[850px] inline-flex items-center justify-center">

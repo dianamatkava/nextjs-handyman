@@ -1,4 +1,4 @@
-export default function CTA () {
+export default function CTAAvailable () {
   return (
     <div className="flex-col justify-center items-center gap-4 flex">
       <div className="self-stretch justify-center items-center gap-4 inline-flex">

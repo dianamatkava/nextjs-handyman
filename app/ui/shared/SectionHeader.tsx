@@ -1,6 +1,6 @@
 export default function SectionHeader ({name}: {name: string}) {
   return (
-    <div className="justify-center items-center gap-2 inline-flex py-4">
+    <div className="w-full justify-center items-center gap-2 inline-flex">
       <div data-svg-wrapper className="relative">
         <svg width="15" height="15" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_644_3381)">
