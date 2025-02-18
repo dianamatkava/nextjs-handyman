@@ -1,8 +1,12 @@
-import {LuSend} from "react-icons/lu";
-import CheckBoxField from "@/components/ui-elements/CheckBoxField";
+"use client"
+import InputField from "@/app/ui/Form/InputField";
+import CheckBoxField from "@/app/ui/Form/CheckBoxField";
 import Link from "next/link";
-import React, {useState} from "react";
-import SuccessBox from "@/components/SuccessBox";
+import SuccessBox from "@/app/ui/Form/SuccessBox";
+import {LuSend} from "react-icons/lu";
+import {useState} from "react";
+import InputLineField from "@/app/ui/Form/InputLineField";
+
 
 export default function SubscribeForm() {
 
@@ -53,19 +57,23 @@ export default function SubscribeForm() {
   return (
     <form onSubmit={(e)=> handleSubmitForm(e)} className="self-stretch h-[86.50px] flex-col justify-start items-start gap-4 flex w-[250px]">
       <div className="self-stretch justify-between items-center inline-flex w-full">
-        <InputField label={'Email'} type={'email'} name={"email"} placeholder={"example@example.com"}>
-          <div className="z-0 absolute top-5 right-1 justify-start items-center gap-2 flex ml-[-55px] cursor-pointer">
-            <span className="text-[#e2e2e2]"><LuSend width={18}/></span>
-            <button type={'submit'} className="text-[#e2e2e2] font-semibold cursor-pointer hover:text-white hover:font-bold">Send</button>
+        <InputLineField label={'Email'} type={'email'} name={"email"} placeholder={"example@example.com"}>
+          <div className="z-0 absolute bottom-3 right-1">
+
+            <button type={'submit'}
+                    className="justify-start items-center gap-2 flex ml-[-55px] cursor-pointer text-black font-semibold hover:text-gray-700">
+              <span className="text-black"><LuSend width={18}/></span>
+              Send
+            </button>
           </div>
-        </InputField>
+        </InputLineField>
       </div>
 
       <div className="self-stretch justify-start items-center gap-2.5 inline-flex">
         <CheckBoxField
           name={"agreements"}
         >
-          <label htmlFor={"agreements"} className="cursor-pointer text-[#828181] text-xsm font-normal flex gap-1">
+          <label htmlFor={"agreements"} className="cursor-pointer text-[#828181] text-xs font-normal flex gap-1">
             I agree to
             <Link href={'/termsofuse'} className={'underline'} target="_blank">Terms Of Use</Link>
             <span className={'text-red-600'}>*</span>

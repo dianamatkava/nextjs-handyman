@@ -1,6 +1,7 @@
 import AchievementItem from "@/app/ui/Components/AchievementItem";
 import SectionHeader from "@/app/ui/Components/SectionHeader";
 import {MdBuild} from "react-icons/md";
+import HeaderH1 from "@/app/ui/Components/HeaderH1";
 
 export default function ServiceHeader () {
   return (
@@ -8,14 +9,11 @@ export default function ServiceHeader () {
       <SectionHeader name="Services">
         <MdBuild size={16} color={'#fe7800'}/>
       </SectionHeader>
-      <div className="w-full justify-center items-center inline-flex">
-        <div className="w-fit text-black text-xxlg font-semibold font-['Plus Jakarta Sans']">Some of the services I provide
-        </div>
-      </div>
-      <div className="justify-start items-center gap-12 inline-flex">
+      <HeaderH1 title={"Some of my services"}/>
+      <div className="justify-center items-center gap-4 sm:gap-12 inline-flex">
         <AchievementItem key={1} title={'Availability'} score={'24/7'}/>
-        <AchievementItem key={2} title={'Certifications'} score={'11'}/>
         <AchievementItem key={3} title={'Response Time'} score={'4h'}/>
+        <AchievementItem key={2} title={'Certifications'} score={'11'}/>
         <AchievementItem key={4} title={'Satisfied Clients'} score={'98%'}/>
       </div>
     </div>

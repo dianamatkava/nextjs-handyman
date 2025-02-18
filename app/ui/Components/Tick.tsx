@@ -15,7 +15,7 @@ export default function Tick ({title}: {title: string}) {
           </defs>
         </svg>
       </div>
-      <div className="w-fit text-[#e4e4e4] text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight">{title}
+      <div className="w-fit text-nowrap text-[#e4e4e4] text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight">{title}
       </div>
     </div>
   )

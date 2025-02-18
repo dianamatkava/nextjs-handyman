@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        'xxlg': '36px',
+        'xxlg': '2.25rem',
         'xlg': '24px',
       },
       keyframes: {

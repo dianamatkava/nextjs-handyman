@@ -1,10 +1,11 @@
 import Tick from "@/app/ui/Components/Tick";
 import Image from 'next/image';
 import CTAGroup from "@/app/ui/Components/CTAGroup";
+import HeaderH1 from "@/app/ui/Components/HeaderH1";
 
 export default function ContactUsBlock () {
   return (
-    <div className="bg-[#0e1518]/60 w-full h-fit px-20 py-14 flex-col justify-center items-center rounded-lg gap-2.5 inline-flex relative">
+    <div className="bg-[#0e1518]/60 w-full h-fit px-5 sm:px-20 py-5 sm:py-14 flex-col justify-center items-center rounded-lg gap-2.5 inline-flex relative">
       <Image
         src="/Image1.jpeg"
         alt="Background"
@@ -14,16 +15,14 @@ export default function ContactUsBlock () {
       />
 
         <div className="flex-col justify-start items-center gap-5 inline-flex">
-          <div className="self-stretch text-center text-white text-xxlg font-semibold font-['Plus Jakarta Sans']">Your
-            One-Stop Solution for All Repairs
-          </div>
-          <div className="w-full justify-start items-start gap-5 inline-flex">
-            <div className="grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">
+          <HeaderH1 title={'Your One-Stop Solution for All Repairs'} className={'text-white'}/>
+          <div className="w-full justify-center items-center gap-5 inline-flex">
+            <div className="w-full flex-col justify-center items-center sm:items-start gap-3 inline-flex">
               <Tick key={1} title={'Working with Insurances'}/>
               <Tick key={2} title={'Virtual consultations from home'}/>
               <Tick key={3} title={'24/7 Emergency Repair Services'}/>
             </div>
-            <div className="grow shrink basis-0 flex-col justify-center items-start gap-3 inline-flex">
+            <div className="hidden sm:inline-flex w-fit grow shrink basis-0 flex-col justify-center items-start gap-3">
               <Tick key={4} title={'Working with Insurances'}/>
               <Tick key={5} title={'Virtual consultations from home'}/>
               <Tick key={6} title={'24/7 Emergency Repair Services'}/>

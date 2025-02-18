@@ -1,29 +1,29 @@
 import Header from "@/app/ui/Header/Header";
-import Tick from "@/app/ui/Components/Tick";
 import CTAGroup from "@/app/ui/Components/CTAGroup";
 import Profile from "@/app/ui/Components/Profile";
 import StartRating from "@/app/ui/Components/StartRating";
+import Tick from "@/app/ui/Components/Tick";
 
 export default function HeroHeader () {
   return (
-    <div className="w-full h-fit py-6 px-12 justify-center items-center bg-[#0e1518]/60"
+    <div className="w-full h-fit py-6 px-5 sm:px-12 justify-center items-center bg-[#0e1518]/60"
          style={{
             background: ` 
-              url("${'Header.gif'}") no-repeat center / cover;
+              url("${'Header.gif'}") no-repeat 80% center / cover;
             `
       }}>
       <Header/>
-      <div className="w-full h-screen flex-col justify-center items-center inline-flex gap-10 mt-[-30px]">
+      <div className="w-full h-screen flex-col justify-center items-center inline-flex gap-10 sm:mt-[-30px]">
         <div className="max-w-[750px] h-fit flex-col justify-start items-center gap-8 flex">
-          <div className="self-stretch flex-col justify-center items-center gap-12 flex">
-            <div className="self-stretch flex-col justify-start items-center gap-12 flex">
-              <div className="w-full h-full self-stretch flex flex-col justify-center gap-5">
+          <div className="self-stretch flex-col justify-center items-center gap-8 sm:gap-12 flex">
+            <div className="self-stretch flex-col justify-center items-center gap-12 flex">
+              <div className="w-full h-full self-stretch flex flex-col justify-center items-center gap-5">
                 <div
-                  className="self-stretch text-center text-white text-[75px] font-semibold font-['Plus Jakarta Sans'] leading-[75px]">Reliable
+                  className="self-stretch text-center text-white text-5xl sm:text-6xl font-semibold font-['Plus Jakarta Sans']">Reliable
                   Handyman Services
                 </div>
                 <div
-                  className="self-stretch text-center text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">As
+                  className="w-full  self-stretch text-center text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">As
                   a group of companies, we offer a wide range of water restoration, leak detection, mold remediation and
                   reconstruction services, including residential. and reconstruction services and reconstruction
                   services, including residential. and reconstruction services
@@ -60,7 +60,7 @@ export default function HeroHeader () {
                 </div>
               </CTAGroup>
             </div>
-            <div className="w-full h-fit flex flex-col items-center justify-center gap-5">
+            <div className=" w-full h-fit flex flex-col items-center justify-center gap-5">
               <div className="w-full h-fit flex items-center justify-center gap-8">
                 <span className='text-xxlg font-semibold text-white'>4.9</span>
                 <StartRating rating={4}/>
@@ -77,7 +77,7 @@ export default function HeroHeader () {
             </div>
           </div>
         </div>
-
+      </div>
         {/*<div className="max-w-[850px] inline-flex items-center justify-center">*/}
         {/*  <div*/}
         {/*    className="w-full self-stretch justify-center items-center gap-3 flex flex-wrap lg:gap-8 md:inline-flex md:flex-nowrap">*/}
@@ -86,7 +86,6 @@ export default function HeroHeader () {
         {/*    <Tick key={3} title={'24/7 Emergency Repair Services'}/>*/}
         {/*  </div>*/}
         {/*</div>*/}
-      </div>
     </div>
   );
 }

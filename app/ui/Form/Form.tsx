@@ -1,5 +1,5 @@
 import CTAPrimary from "@/app/ui/Components/CTAPrimary";
-import InputField from "@/app/ui/Form/Input";
+import InputField from "@/app/ui/Form/InputField";
 import TextArea from "@/app/ui/Form/TextArea";
 import {MdOutlineMail} from "react-icons/md";
 import {LuMessageCircleMore} from "react-icons/lu";

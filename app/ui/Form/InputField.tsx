@@ -1,4 +1,5 @@
 import { MdOutlineMail } from "react-icons/md";
+import React from "react";
 
 export default function InputField (
   {name, label, value, placeholder, isRequired, children}: {
@@ -14,7 +15,7 @@ export default function InputField (
     <div className="self-stretch h-fit flex-col justify-start items-start gap-2.5 flex">
       <label
         className="self-stretch text-black text-xs font-bold font-['Plus Jakarta Sans'] leading-tight tracking-tight">
-        {label}
+        {label} {isRequired && <span className={'text-red-600 px-1'}>*</span>}
       </label>
       <div
         className="self-stretch h-fit bg-slate-100 rounded-lg justify-center items-center gap-1 inline-flex">

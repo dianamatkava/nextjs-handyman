@@ -1,6 +1,7 @@
 import CTAPrimary from "@/app/ui/Components/CTAPrimary";
 import SectionHeader from "@/app/ui/Components/SectionHeader";
 import {FaRegCommentDots} from "react-icons/fa";
+import HeaderH1 from "@/app/ui/Components/HeaderH1";
 
 export default function TestimonialHeader () {
   return (
@@ -9,9 +10,7 @@ export default function TestimonialHeader () {
         <FaRegCommentDots size={16} color={'#fe7800'}/>
       </SectionHeader>
       <div className="self-stretch flex-col justify-start items-center gap-5 flex">
-        <div className="self-stretch text-center text-black text-xxlg font-medium font-['Plus Jakarta Sans']">Your
-          One-Stop Solution for All Repairs
-        </div>
+        <HeaderH1 title={'Your One-Stop Solution for All Repairs'} className={''}/>
         <div
           className="max-w-[500px] text-center text-[#595959] text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">Contrary
           to popular belief, Lorem Ipsum is not simply random text. I not simply random text. I

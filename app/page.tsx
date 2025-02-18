@@ -7,7 +7,7 @@ import ContactUs from "@/app/ui/ContactUs/ContactUs";
 
 export default function Page() {
   return (
-    <main className="w-full h-full flex justify-center items-start min-h-screen flex-col px-20 py-8 gap-20">
+    <main className="w-full h-full flex justify-center items-start min-h-screen flex-col px-5 sm:px-10 py-8 gap-20 ">
       <WhoAmI/>
       <Services/>
       <ContactUsBlock/>
