@@ -12,7 +12,7 @@ export default function InputField (
   }
 ) {
   return (
-    <div className="self-stretch h-fit flex-col justify-start items-start gap-2.5 flex">
+    <div className="relative self-stretch h-fit flex-col justify-start items-start gap-2.5 flex">
       <label
         className="self-stretch text-black text-xs font-bold font-['Plus Jakarta Sans'] leading-tight tracking-tight">
         {label} {isRequired && <span className={'text-red-600 px-1'}>*</span>}
@@ -20,7 +20,7 @@ export default function InputField (
       <div
         className="self-stretch h-fit bg-slate-100 rounded-lg justify-center items-center gap-1 inline-flex">
         <div
-          className="grow shrink basis-0 self-stretch px-4 py-1.5 rounded-lg justify-start items-center gap-1 flex">
+          className="relative grow shrink basis-0 self-stretch px-4 py-1.5 rounded-lg justify-start items-center gap-1 flex">
           {children}
           <input
             type="email"
