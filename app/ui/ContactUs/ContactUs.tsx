@@ -4,6 +4,7 @@ import {FaPhoneAlt} from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
 import { MdFacebook } from "react-icons/md";
 import { MdOutlineWhatsapp } from "react-icons/md";
+import HeaderH1 from "@/app/ui/Components/HeaderH1";
 
 
 
@@ -11,7 +12,7 @@ export default function ContactUs () {
   return (
     <div className="w-full h-full flex-col justify-center items-start gap-5 inline-flex">
       <div className="w-full sm:w-1/2 h-fit flex-col justify-start items-start gap-5 inline-flex">
-        <div className="w-full text-black text-xxlg font-semibold font-['Plus Jakarta Sans']">Get in Touch!</div>
+        <HeaderH1 title={'Get in Touch!'} id={'contact'}/>
         <div className="w-full text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">Contrary to
           popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
           from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney.

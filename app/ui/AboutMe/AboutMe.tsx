@@ -15,7 +15,7 @@ export default function AboutMe() {
         <div className="w-full sm:w-1/2 h-fit flex-col justify-start items-start gap-5 inline-flex">
           <div className="self-stretch h-fit flex-col justify-between items-start flex gap-10">
             <div className="self-stretch h-fit flex-col justify-start items-start gap-8 flex">
-              <HeaderH1 title={'Professional Handyman providing reliable repair services'} className={'justify-start items-center text-start'}/>
+              <HeaderH1 id={'about'} title={'Professional Handyman providing reliable repair services'} className={'justify-start items-center text-start'}/>
               <div className="w-full text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">Contrary to
                 popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
                 literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at

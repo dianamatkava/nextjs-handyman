@@ -15,7 +15,7 @@ export default function ContactUsBlock () {
       />
 
         <div className="flex-col justify-start items-center gap-5 inline-flex">
-          <HeaderH1 title={'Your One-Stop Solution for All Repairs'} className={'text-white'}/>
+          <HeaderH1 id={'phone'} title={'Your One-Stop Solution for All Repairs'} className={'text-white'}/>
           <div className="w-full justify-center items-center gap-5 inline-flex">
             <div className="w-full flex-col justify-center items-center sm:items-start gap-3 inline-flex">
               <Tick key={1} title={'Working with Insurances'}/>

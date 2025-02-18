@@ -47,7 +47,7 @@ export default function Form () {
       <TextArea name={'message'} label={'Enter your message'} placeholder={'Enter your message'} isRequired={false}>
         <LuMessageCircleMore size={18}/>
       </TextArea>
-      <CTAPrimary/>
+      <CTAPrimary className={'bg-[#fe7800]'}/>
     </form>
   )
 }

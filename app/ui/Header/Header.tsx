@@ -1,6 +1,7 @@
 "use client"
 import Logo from "@/app/ui/Components/Logo";
 import {useState} from "react";
+import Link from "next/link";
 
 export default function Header () {
 
@@ -8,15 +9,16 @@ export default function Header () {
     <div className="w-full h-fit justify-between inline-flex">
       <Logo/>
       <div className="justify-start items-center gap-12 flex">
-        <div className="hidden justify-start items-center gap-8 sm:flex">
-          <div className="text-white text-sm font-normal font-['Plus Jakarta Sans']">About</div>
-          <div className="text-white text-sm font-normal font-['Plus Jakarta Sans']">Services</div>
-          <div className="text-white text-sm font-normal font-['Plus Jakarta Sans']">Contact</div>
+        <div className="hidden justify-start items-center gap-4 sm:flex">
+          <Link href={'/#about'} className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']">About</Link>
+          <Link href={'/#services'} className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']">Services</Link>
+          <Link href={'/#contact'} className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']">Contact</Link>
         </div>
-        <div
-          className="w-[110px] h-[40px] rounded-[40px] justify-center items-center gap-2.5 flex bg-white">
+        <Link href={'/#contact'}
+          className="w-[110px] h-[40px] rounded-[40px] justify-center items-center gap-2.5 flex bg-white cursor-pointer">
           <div className="w-fit text-black text-sm font-medium font-['Plus Jakarta Sans']">Contact</div>
-        </div>
+        </Link>
+
       </div>
 
       {/*{isNavOpen && (*/}

@@ -57,7 +57,7 @@ export default function SubscribeForm() {
   return (
     <form onSubmit={(e)=> handleSubmitForm(e)} className="self-stretch h-[86.50px] flex-col justify-start items-start gap-4 flex w-[250px]">
       <div className="self-stretch justify-between items-center inline-flex w-full">
-        <InputLineField label={'Email'} type={'email'} name={"email"} placeholder={"example@example.com"}>
+        <InputLineField label={'Email'} type={'email'} name={"email"} placeholder={"example@example.com"} labelClassName={'text-white'}>
           <div className="z-0 absolute bottom-3 right-1">
 
             <button type={'submit'}

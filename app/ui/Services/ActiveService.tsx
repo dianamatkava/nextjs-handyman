@@ -12,7 +12,7 @@ export default function ActiveService () {
       <div
         className="border-b border-black flex-col justify-center items-start gap-4 inline-flex pb-6">
         <div className="w-fit flex-col justify-start items-start gap-[15px] flex">
-          <HeaderH1 title={'Water Damage'} className={'pl-1'}/>
+          <HeaderH1 id={'services'} title={'Water Damage'} className={'pl-1'}/>
           {/*<div className="justify-start items-center gap-1.5 inline-flex">*/}
           {/*  <Tag key='Repair' name='Repair'/>*/}
           {/*  <Tag key='Remodelling' name='Remodelling'/>*/}

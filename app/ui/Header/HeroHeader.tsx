@@ -13,7 +13,7 @@ export default function HeroHeader () {
             `
       }}>
       <Header/>
-      <div className="w-full h-screen flex-col justify-center items-center inline-flex gap-10 sm:mt-[-30px]">
+      <div className="w-full h-fit flex-col justify-center items-center inline-flex gap-8 py-20 sm:mt-[-0px]">
         <div className="max-w-[750px] h-fit flex-col justify-start items-center gap-8 flex">
           <div className="self-stretch flex-col justify-center items-center gap-8 sm:gap-12 flex">
             <div className="self-stretch flex-col justify-center items-center gap-12 flex">

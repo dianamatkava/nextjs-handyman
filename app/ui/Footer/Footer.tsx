@@ -52,9 +52,9 @@ export default function Footer () {
             <div className="py-[25px] flex-col justify-start items-start inline-flex gap-4 sm:gap-10">
               <div className="self-stretch text-white text-md font-bold">Links<br/></div>
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 flex">
-                <Link href='/#About'
+                <Link href='/#about'
                       className="w-fit text-[#f5efe7] text-sm cursor-pointer hover:text-[#828181]">About Us</Link>
-                <Link href='/#Contact'
+                <Link href='/#contact'
                       className="w-fit text-[#f5efe7] text-sm cursor-pointer hover:text-[#828181]">Contact
                   Us</Link>
               </div>
