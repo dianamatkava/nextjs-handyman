@@ -36,7 +36,7 @@ export default function ServiceItem({
         <div className="w-full h-fit py-1 flex-col justify-center items-start inline-flex">
           <div
             className={
-              `w-full text-black text-xlg font-['Plus Jakarta Sans'] tracking-tight` +
+              `w-full text-black text-xlg font-['Plus Jakarta Sans'] tracking-tight ` +
               `${isActive ? "!font-bold" : null}`
             }
           >

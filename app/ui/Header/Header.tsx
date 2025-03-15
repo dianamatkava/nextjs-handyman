@@ -8,22 +8,22 @@ export default function Header() {
     <div className="w-full h-fit justify-between inline-flex">
       <Logo />
       <div className="justify-start items-center gap-12 flex">
-        <div className="hidden justify-start items-center gap-4 sm:flex">
+        <div className="hidden justify-start items-center gap-3 sm:flex">
           <Link
             href={"/#about"}
-            className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']"
+            className="p-3 text-white text-xs font-normal font-['Plus Jakarta Sans']"
           >
             About
           </Link>
           <Link
             href={"/#services"}
-            className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']"
+            className="p-3 text-white text-xs font-normal font-['Plus Jakarta Sans']"
           >
             Services
           </Link>
           <Link
             href={"/#contact"}
-            className="p-3 text-white text-sm font-normal font-['Plus Jakarta Sans']"
+            className="p-3 text-white text-xs font-normal font-['Plus Jakarta Sans']"
           >
             Contact
           </Link>

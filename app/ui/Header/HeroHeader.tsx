@@ -19,10 +19,10 @@ export default function HeroHeader() {
           <div className="self-stretch flex-col justify-center items-center gap-8 sm:gap-12 flex">
             <div className="self-stretch flex-col justify-center items-center gap-12 flex">
               <div className="w-full h-full self-stretch flex flex-col justify-center items-center gap-5">
-                <div className="self-stretch text-center text-white text-5xl sm:text-6xl font-semibold font-['Plus Jakarta Sans']">
+                <div className="text-center text-white text-4xl sm:text-6xl font-semibold font-['Plus Jakarta Sans']">
                   Reliable Handyman Services
                 </div>
-                <div className="w-full  self-stretch text-center text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">
+                <div className="w-full text-center text-[#e4e4e4] text-xs sm:text-sm font-medium font-['Plus Jakarta Sans'] sm:leading-6">
                   Hi, I am Alex. I provide reliable handyman services focused on
                   quality and precision. From fixing minor issues to handling
                   larger maintenance projects, I ensure every job is completed
@@ -30,29 +30,29 @@ export default function HeroHeader() {
                   peace of mind by keeping your home safe, comfortable, and
                   well-maintained.
                 </div>
-                <div className="justify-center items-center gap-5 flex flex-wrap ">
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-wide">
+                <div className="justify-center items-center gap-5 flex flex-wrap">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     Plumbing
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     {" "}
                     •
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-wide">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     Electrical
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     {" "}
                     •
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-wide">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     Repairs
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     {" "}
                     •
                   </div>
-                  <div className="w-fit text-center text-white text-sm font-semibold font-['Plus Jakarta Sans'] tracking-wide">
+                  <div className="w-fit text-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] tracking-wide">
                     Home Maintenance
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default function HeroHeader() {
                 <StartRating rating={4} />
               </div>
               <div className="w-full h-fit flex items-center justify-center gap-8">
-                <div className="max-w-[600px] self-stretch text-center text-[#e4e4e4] text-sm font-medium font-['Plus Jakarta Sans']">
+                <div className="max-w-[600px] self-stretch text-center text-[#e4e4e4] text-xs sm:text-sm font-medium font-['Plus Jakarta Sans'] sm:leading-6">
                   I take pride in delivering meticulous work and exceptional
                   customer care, my satisfaction rating speaks for itself.
                   Clients consistently highlight my attention to detail, respect

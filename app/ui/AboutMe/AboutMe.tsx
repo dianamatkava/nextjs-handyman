@@ -41,17 +41,17 @@ export default function AboutMe() {
                 </p>
               </div>
               <ImageContainer
-                src={"/Contract.jpg"}
-                alt={"/Contract.jpg"}
-                className={"block w-full h-[250px] sm:hidden"}
+                src={"/aboutme.jpg"}
+                alt={"About me image"}
+                className={"block w-full h-[180px] sm:hidden"}
               />
             </div>
             <CTAGroup className="hidden sm:flex">
-              <div className="w-fit h-full flex-col justify-center items-start gap-1 inline-flex">
+              <div className="w-fit h-full flex-col justify-center items-start gap-0 inline-flex">
                 <div className="self-stretch text-black text-sm font-semibold font-['Plus Jakarta Sans']">
                   Contact me
                 </div>
-                <div className="self-stretch text-black text-sm font-normal font-['Plus Jakarta Sans']">
+                <div className="self-stretch text-black underline text-sm font-normal font-['Plus Jakarta Sans']">
                   +1 619 510 1998
                 </div>
               </div>
@@ -59,8 +59,8 @@ export default function AboutMe() {
           </div>
         </div>
         <ImageContainer
-          src={"/Contract.jpg"}
-          alt={"/Contract.jpg"}
+          src={"/aboutme.jpg"}
+          alt={"About me image"}
           className={"hidden w-1/2 sm:block"}
         />
       </div>

@@ -28,11 +28,11 @@ export default function ContactUsBlock() {
           </div>
         </div>
         <CTAGroup>
-          <div className="w-fit h-full flex-col justify-center items-start gap-1 inline-flex">
+          <div className="w-fit h-full flex-col justify-center items-start gap-0 inline-flex">
             <div className="self-stretch text-white text-sm font-semibold font-['Plus Jakarta Sans']">
               Contact me
             </div>
-            <div className="self-stretch text-white text-sm font-normal font-['Plus Jakarta Sans']">
+            <div className="self-stretch text-white underline text-sm font-normal font-['Plus Jakarta Sans']">
               +1 619 510 1998
             </div>
           </div>

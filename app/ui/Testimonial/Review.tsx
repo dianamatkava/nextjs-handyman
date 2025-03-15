@@ -1,18 +1,28 @@
 import StartRating from "@/app/ui/Components/StartRating";
 import Profile from "@/app/ui/Components/Profile";
 
-export default function Review () {
+export default function Review({
+  name,
+  title,
+  rating,
+  review,
+  image,
+}: {
+  name: string;
+  title: string;
+  rating: number;
+  review: string;
+  image: string;
+}) {
   return (
-    <div
-      className="w-fit h-fit p-5 rounded-md border border-[#eaeaea] flex-col justify-center items-start gap-5 inline-flex">
+    <div className="w-fit h-[200px] p-5 rounded-md border border-[#eaeaea] flex-col justify-start items-start gap-3 inline-flex">
       <div className="justify-start items-center gap-5 inline-flex">
-        <Profile name={'Lorem Ipsum'} title={'House Remodeling'}/>
-        <StartRating rating={4}/>
+        <Profile name={name} title={title} image={image} />
+        <StartRating rating={rating} />
       </div>
-      <div className="w-[350px] text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">College in Virginia,
-        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
-        cites of the word in classical literature, discovered the undoubtable source.
+      <div className="w-[350px] text-black text-xs font-normal font-['Plus Jakarta Sans'] tracking-tight">
+        {review}
       </div>
     </div>
-  )
+  );
 }
