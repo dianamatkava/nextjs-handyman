@@ -34,10 +34,8 @@ export default function ServiceList() {
     if (hoverSelected) return;
     if (!isVisible) return;
 
-    const scrollY = window.scrollY;
+    if (!Array.isArray(servicesData) || servicesData.length === 0) return;
     const timeout = setTimeout(() => {
-      if (!Array.isArray(servicesData) || servicesData.length === 0) return;
-
       const currentIndex = servicesData.findIndex(
         (e) => Number(e.id) === Number(activeService)
       );
@@ -45,7 +43,6 @@ export default function ServiceList() {
 
       setActiveService(servicesData[nextIndex]?.id ?? null);
       setActiveImage(servicesData[nextIndex]?.image ?? null);
-      window.scrollTo(0, scrollY);
     }, 1500);
 
     return () => clearTimeout(timeout);
