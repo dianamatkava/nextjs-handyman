@@ -1,14 +1,16 @@
 import CTAPrimary from "@/app/ui/Components/CTAPrimary";
 import CTACall from "@/app/ui/Components/CTACall";
 
-export default function CTAGroup ({children=null}) {
+export default function CTAGroup({ children = null, className = "" }) {
   return (
-    <div className="flex-col justify-center items-center gap-4 flex">
+    <div
+      className={`flex-col justify-center items-center gap-4 flex ${className}`}
+    >
       <div className="self-stretch justify-center items-center gap-4 inline-flex">
-        <CTAPrimary className={'bg-[#fe7800]'}/>
-        <CTACall/>
+        <CTAPrimary className={"bg-[#fe7800]"} />
+        <CTACall />
         {children}
       </div>
     </div>
-  )
+  );
 }

@@ -12,11 +12,11 @@ export default function WhoAmI () {
       <div className="self-stretch justify-start items-center gap-4 inline-flex">
         <div className="grow shrink basis-0 h-fit flex flex-col sm:flex-row justify-between items-center gap-6">
           <div className='sm:w-1/2'>
-            <HeaderH1 id={'whoAmI'} title={'I am professional Handymen with 11 years of experience'} className={'text-start'}/>
+            <HeaderH1 id={'whoAmI'} title={'Handyman Expert Committed to Quality'} className={'text-start'}/>
           </div>
-          <div className="sm:w-1/2 text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">Contrary to
-            popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney.
+          <div className="sm:w-1/2 text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">
+            I am a handyman with a passion for precision and reliable service. I specialize in a range of home
+            repair and maintenance projects, ensuring every job is completed with care and attention to detail.
           </div>
         </div>
       </div>
