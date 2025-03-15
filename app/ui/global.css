@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@layer base {
+  input {
+    @apply appearance-none bg-transparent border-none outline-none focus:outline-none focus:border-transparent;
+  }
+}
+
+@layer base {
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-0 focus:outline-0 focus:border-0;
+  }
+}
