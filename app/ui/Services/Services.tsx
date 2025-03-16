@@ -9,9 +9,6 @@ export default function ServiceList() {
   const [activeService, setActiveService] = useState<number | null>(
     servicesData?.[0]?.id ?? null
   );
-  const [activeImage, setActiveImage] = useState<string | null>(
-    servicesData?.[0]?.image ?? null
-  );
   const [isVisible, setIsVisible] = useState(false);
   const [hoverSelected, setHoverSelected] = useState<number | null>(null);
 
@@ -22,11 +19,15 @@ export default function ServiceList() {
       },
       { threshold: 0.1 }
     );
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+
+    const currentRef = containerRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
+
     return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
@@ -42,18 +43,14 @@ export default function ServiceList() {
       const nextIndex = (currentIndex + 1) % servicesData.length;
 
       setActiveService(servicesData[nextIndex]?.id ?? null);
-      setActiveImage(servicesData[nextIndex]?.image ?? null);
     }, 1500);
 
     return () => clearTimeout(timeout);
-  }, [activeService, servicesData, isVisible, hoverSelected]);
+  }, [activeService, isVisible, hoverSelected]);
 
   const onMouseEnterService = (id: number) => {
     setHoverSelected(id);
     setActiveService(id);
-    setActiveImage(
-      servicesData.find((e) => Number(e.id) === Number(id))?.image ?? null
-    );
   };
 
   const onMouseLeaveService = () => {

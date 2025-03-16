@@ -14,9 +14,9 @@ export default function ContactUs() {
             <HeaderH1 title={"Get in Touch!"} id={"contact"} />
             <div className="w-full text-black text-sm font-normal font-['Plus Jakarta Sans'] tracking-tight">
               Got a home repair question or need a helping hand with a small
-              project? I'm here for you! Reach out via phone or the contact
-              form, and let's chat about how we can make your space feel even
-              better.
+              project? I&apos;m here for you! Reach out via phone or the contact
+              form, and let&apos;s chat about how we can make your space feel
+              even better.
             </div>
           </div>
           <Form />

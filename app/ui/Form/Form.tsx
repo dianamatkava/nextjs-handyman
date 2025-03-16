@@ -35,8 +35,12 @@ export default function Form() {
         const errorData = await response.json();
         console.error(errorData);
       }
-    } catch (error: any) {
-      console.error(`Failed to submit form: ${error.message}`);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(`Failed to submit form: ${error.message}`);
+      } else {
+        console.error("An unknown error occurred");
+      }
     } finally {
       setIsSubmitting(false);
     }

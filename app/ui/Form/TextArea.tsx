@@ -3,14 +3,12 @@ import React from "react";
 export default function TextArea({
   name,
   label,
-  value,
   placeholder,
   required,
   children,
 }: {
   name: string;
   label: string;
-  value?: string;
   placeholder?: string;
   required?: boolean;
   children?: React.ReactNode;

@@ -1,5 +1,3 @@
-import { FaPhoneAlt } from "react-icons/fa";
-
 export default function ContactDetail({
   name,
   title,

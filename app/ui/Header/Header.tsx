@@ -1,6 +1,4 @@
-"use client";
 import Logo from "@/app/ui/Components/Logo";
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
