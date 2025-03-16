@@ -1,3 +1,4 @@
+"use client";
 import Form from "@/app/ui/Form/Form";
 import ContactDetail from "@/app/ui/ContactUs/ContactDetail";
 import { FaPhoneAlt } from "react-icons/fa";

@@ -1,17 +1,28 @@
 import Link from "next/link";
 
-export default function CTAPrimary({ className }: { className?: string }) {
+interface CTAPrimaryProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  type?: "button" | "submit";
+  disabled?: boolean;
+}
+
+export default function CTAPrimary({
+  children,
+  onClick,
+  type = "button",
+  disabled = false,
+}: CTAPrimaryProps) {
   return (
-    <Link
-      href={"/#contact"}
-      className={
-        "w-[6.25rem] h-[2.35rem] rounded-[40px] border border-[#fe7800] justify-center items-center gap-2.5 flex" +
-        ` ${className}`
-      }
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors ${
+        disabled ? "opacity-50 cursor-not-allowed" : ""
+      }`}
     >
-      <div className="w-fit text-white text-xs font-semibold font-['Plus Jakarta Sans']">
-        Contact
-      </div>
-    </Link>
+      {children}
+    </button>
   );
 }
