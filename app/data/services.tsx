@@ -11,7 +11,7 @@ export const servicesData = [
     title: "Interior and Exterior Painting",
     description:
       "Applying new paint or stain to walls, furniture, baseboards, doors, decks, or fences.",
-    image: "/services/interior-exterior-painting-services.webp",
+    image: "/services/min/interior-exterior-painting-services.jpeg",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const servicesData = [
     title: "Deck Repairs",
     description:
       "Maintaining and repairing outdoor decks to ensure safety and longevity.",
-    image: "/services/deck-repairs.jpg",
+    image: "/services/min/desk-painting.jpeg",
   },
   {
     id: 8,
@@ -65,6 +65,6 @@ export const servicesData = [
     title: "Smart Home Upgrades",
     description:
       "Installing devices like smart thermostats, doorbells, or security cameras.",
-    image: "/services/smart-home-upgrades.jpg",
+    image: "/services/min/smart-home-upgrades.jpg",
   },
 ];

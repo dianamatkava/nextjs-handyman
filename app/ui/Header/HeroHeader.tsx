@@ -19,9 +19,9 @@ export default function HeroHeader() {
           <div className="self-stretch flex-col justify-center items-center gap-8 sm:gap-12 flex">
             <div className="self-stretch flex-col justify-center items-center gap-12 flex">
               <div className="w-full h-full self-stretch flex flex-col justify-center items-center gap-5">
-                <div className="text-center text-white text-4xl sm:text-6xl font-semibold font-['Plus Jakarta Sans']">
+                <h2 className="text-center text-white text-4xl sm:text-6xl font-semibold font-['Plus Jakarta Sans']">
                   Reliable Handyman Services
-                </div>
+                </h2>
                 <div className="w-full text-center text-[#e4e4e4] text-xs sm:text-sm font-medium font-['Plus Jakarta Sans'] sm:leading-6">
                   Hi, I am Alex. I provide reliable handyman services focused on
                   quality and precision. From fixing minor issues to handling
