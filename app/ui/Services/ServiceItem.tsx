@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 
 export default function ServiceItem({
   id,

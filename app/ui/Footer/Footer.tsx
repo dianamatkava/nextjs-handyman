@@ -63,17 +63,17 @@ export default function Footer() {
         <p className="text-xs text-gray-500">© 2025 All Rights Reserved</p>
         <div className="flex items-center gap-4 text-xs text-gray-500">
           <Link
-            href="/privacypolicy"
+            href="/privacy#privacy"
             className="hover:text-gray-900 transition-colors"
           >
             Privacy Policy
           </Link>
           <span>•</span>
           <Link
-            href="/termsofuse"
+            href="/terms#terms"
             className="hover:text-gray-900 transition-colors"
           >
-            Terms of Service
+            Terms of Use
           </Link>
         </div>
       </div>

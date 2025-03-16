@@ -5,7 +5,10 @@ import HeaderH1 from "@/app/ui/Components/HeaderH1";
 
 export default function WhoAmI() {
   return (
-    <div className="w-full h-fit flex-col justify-start items-center gap-10 inline-flex">
+    <div
+      className="w-full h-fit flex-col justify-start items-center gap-10 inline-flex"
+      id="whoAmI"
+    >
       <SectionHeader name={"Who am I?"}>
         <IoPersonSharp size={16} color={"#fe7800"} />
       </SectionHeader>
