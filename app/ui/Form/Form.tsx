@@ -2,7 +2,7 @@
 
 import TextArea from "@/app/ui/Form/TextArea";
 import { MdOutlineMail } from "react-icons/md";
-import { LuMessageCircleMore, LuSend } from "react-icons/lu";
+import { LuMessageCircleMore } from "react-icons/lu";
 import InputLineField from "@/app/ui/Form/InputLineField";
 import { useState } from "react";
 
