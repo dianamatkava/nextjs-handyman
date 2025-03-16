@@ -9,7 +9,14 @@ export default function Testimonial() {
       <div className="w-full h-fit justify-start items-center gap-4 inline-flex overflow-hidden">
         <div className="w-full h-fit justify-start items-center gap-4 inline-flex animate-marquee">
           {reviews.map((review) => (
-            <Review key={review.id} {...review} />
+            <Review
+              key={review.id}
+              name={review.name}
+              rating={review.rating}
+              review={review.review}
+              image={review.image}
+              service={review.service}
+            />
           ))}
         </div>
       </div>
