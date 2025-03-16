@@ -9,7 +9,7 @@ export default function ServiceHeader() {
       <SectionHeader name="Services">
         <MdBuild size={16} color={"#fe7800"} />
       </SectionHeader>
-      <HeaderH1 title={"Some of my services"} />
+      <HeaderH1 id={"services"} title={"Some of my services"} />
       <div className="justify-center items-center gap-4 sm:gap-12 inline-flex">
         <AchievementItem key={1} title={"Availability"} score={"24/7"} />
         <AchievementItem key={3} title={"Response Time"} score={"3h"} />
