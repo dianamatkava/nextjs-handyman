@@ -47,11 +47,11 @@ export default function Footer() {
                 <span>+1 (619) 510-1998</span>
               </a>
               <a
-                href="mailto:alex@alxhandyman.com"
+                href="mailto:service@alxhandyman.com"
                 className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <MdOutlineAlternateEmail className="w-4 h-4" />
-                <span>alex@alxhandyman.com</span>
+                <span>service@alxhandyman.com</span>
               </a>
             </div>
           </div>

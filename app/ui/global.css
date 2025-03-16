@@ -6,26 +6,23 @@ html {
   scroll-behavior: smooth;
 }
 
-input[type='number'] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='number']::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.line-black {
+  stroke: black;
 }
 
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-@layer base {
-  input {
-    @apply appearance-none bg-transparent border-none outline-none focus:outline-none focus:border-transparent;
-  }
+.line-top-bottom {
+  stroke-dasharray: 12 63;
 }
 
 @layer base {

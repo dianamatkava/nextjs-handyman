@@ -12,7 +12,7 @@ export default function ContactDetail({
   children?: React.ReactElement;
 }) {
   return (
-    <div className="w-full max-w-[500px] justify-between items-center gap-8 inline-flex">
+    <div className="w-full max-w-[500px] justify-between items-center gap-4 inline-flex">
       <div className="self-stretch justify-between items-center flex gap-5">
         {children}
         <div className="w-fit flex-col justify-start items-start inline-flex">

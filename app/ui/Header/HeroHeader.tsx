@@ -83,19 +83,12 @@ export default function HeroHeader() {
                 mode={"dark"}
                 name={"Alex Zakharov"}
                 title={"Handyman"}
+                image={"/MyImage.png"}
               />
             </div>
           </div>
         </div>
       </div>
-      {/*<div className="max-w-[850px] inline-flex items-center justify-center">*/}
-      {/*  <div*/}
-      {/*    className="w-full self-stretch justify-center items-center gap-3 flex flex-wrap lg:gap-8 md:inline-flex md:flex-nowrap">*/}
-      {/*    <Tick key={1} title={'Working with Insurances'}/>*/}
-      {/*    <Tick key={2} title={'Virtual consultations from home'}/>*/}
-      {/*    <Tick key={3} title={'24/7 Emergency Repair Services'}/>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
     </div>
   );
 }
