@@ -5,8 +5,7 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get("host") || "";
 
-  // Redirect non-www to www
-  if (!hostname.startsWith("www.") && process.env.NODE_ENV === "production") {
+  if (hostname === "alxhandyman.com" && process.env.NODE_ENV === "production") {
     url.protocol = "https";
     url.host = `www.${hostname}`;
     return NextResponse.redirect(url);
