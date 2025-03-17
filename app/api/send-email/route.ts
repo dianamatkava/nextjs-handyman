@@ -32,6 +32,7 @@ export async function POST(request: Request) {
   });
 
   try {
+    console.log("Starting email send attempt");
     await transporter.sendMail({
       from: SMTP_SERVER_USERNAME,
       to: SMTP_SERVER_USERNAME,
@@ -59,6 +60,7 @@ export async function POST(request: Request) {
       `,
     });
 
+    console.log("Email sent successfully");
     return new Response(
       JSON.stringify({ message: "Email sent successfully!" }),
       {

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   images: {
     domains: [
       "alxhandyman.com",
@@ -14,21 +19,6 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        has: [
-          {
-            type: "host",
-            value: "alxhandyman.com",
-          },
-        ],
-        destination: "https://www.alxhandyman.com",
-        permanent: true,
-      },
-    ];
   },
 };
 
