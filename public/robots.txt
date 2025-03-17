@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.alxhandyman.com/sitemap.xml 
+Sitemap: https://www.alxhandyman.com/sitemap.xml  
+Disallow: /admin
+Disallow: /api
+Disallow: /_next
+Disallow: /static
