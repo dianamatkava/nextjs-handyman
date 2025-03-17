@@ -6,6 +6,7 @@ const nextConfig = {
       "alxhandyman.com",
       "www.alxhandyman.com",
       "handyman-two.vercel.app",
+      "vercel.app",
     ],
     remotePatterns: [
       {
@@ -13,6 +14,21 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        has: [
+          {
+            type: "host",
+            value: "alxhandyman.com",
+          },
+        ],
+        destination: "https://www.alxhandyman.com",
+        permanent: true,
+      },
+    ];
   },
 };
 
