@@ -69,9 +69,18 @@ export async function POST(request: Request) {
 
   // Send confirmation to customer
   try {
-    console.log("Starting confirmation email to customer");
-    await transporter.sendMail({
-      from: SMTP_SERVER_USERNAME,
+    console.log("=== Starting Customer Email Process ===");
+    console.log("Email Configuration:", {
+      from: `"ALX Handyman" <${SMTP_SERVER_USERNAME}>`,
+      to: email,
+      host: SMTP_SERVER_HOST,
+      port: SMTP_SERVER_PORT,
+      secure: true,
+      debug: DEBUG === "true",
+    });
+
+    const mailOptions = {
+      from: `"ALX Handyman" <${SMTP_SERVER_USERNAME}>`,
       to: email,
       subject: `Thank you for contacting alxhandyman.com`,
       html: `
@@ -83,11 +92,35 @@ export async function POST(request: Request) {
           Website: <a href="https://www.alxhandyman.com" target="_blank">www.alxhandyman.com</a>
         </p>
       `,
+      headers: {
+        "X-Priority": "1",
+        "X-MSMail-Priority": "High",
+        Importance: "high",
+      },
+    };
+
+    console.log("Attempting to send email with options:", mailOptions);
+
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully! Response:", {
+      messageId: info.messageId,
+      response: info.response,
+      accepted: info.accepted,
+      rejected: info.rejected,
     });
-    console.log("Customer confirmation sent successfully");
+
     customerEmailSent = true;
   } catch (error) {
+    console.error("=== Email Send Error ===");
     console.error("Error sending customer confirmation:", error);
+    if (error instanceof Error) {
+      console.error("Detailed error information:", {
+        name: error.name,
+        message: error.message,
+        stack: error.stack,
+        cause: error.cause,
+      });
+    }
     return new Response(
       JSON.stringify({
         error:
