@@ -11,7 +11,7 @@ export const servicesData = [
     title: "Interior and Exterior Painting",
     description:
       "Applying new paint or stain to walls, furniture, baseboards, doors, decks, or fences.",
-    image: "/services/min/interior-exterior-painting-services.jpeg",
+    image: "/services/min/interior-exterior-painting-services.jpg",
   },
   {
     id: 3,
