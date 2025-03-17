@@ -31,8 +31,12 @@ export async function POST(request: Request) {
     },
   });
 
+  let adminEmailSent = false;
+  let customerEmailSent = false;
+
+  // Send notification to admin
   try {
-    console.log("Starting email send attempt");
+    console.log("Starting notification email to admin");
     await transporter.sendMail({
       from: SMTP_SERVER_USERNAME,
       to: SMTP_SERVER_USERNAME,
@@ -44,7 +48,28 @@ export async function POST(request: Request) {
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
+    console.log("Admin notification sent successfully");
+    adminEmailSent = true;
+  } catch (error) {
+    console.error("Error sending admin notification:", error);
+    return new Response(
+      JSON.stringify({
+        error:
+          error instanceof Error
+            ? error.message
+            : "Failed to send admin notification",
+        step: "admin_notification",
+      }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+  }
 
+  // Send confirmation to customer
+  try {
+    console.log("Starting confirmation email to customer");
     await transporter.sendMail({
       from: SMTP_SERVER_USERNAME,
       to: email,
@@ -59,20 +84,35 @@ export async function POST(request: Request) {
         </p>
       `,
     });
-
-    console.log("Email sent successfully");
+    console.log("Customer confirmation sent successfully");
+    customerEmailSent = true;
+  } catch (error) {
+    console.error("Error sending customer confirmation:", error);
     return new Response(
-      JSON.stringify({ message: "Email sent successfully!" }),
+      JSON.stringify({
+        error:
+          error instanceof Error
+            ? error.message
+            : "Failed to send customer confirmation",
+        step: "customer_confirmation",
+        adminEmailSent,
+      }),
       {
-        status: 200,
+        status: 500,
         headers: { "Content-Type": "application/json" },
       }
     );
-  } catch (error) {
-    console.error("Error sending email:", error);
-    return new Response(JSON.stringify({ error: "Failed to send email" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
   }
+
+  return new Response(
+    JSON.stringify({
+      message: "Emails sent successfully!",
+      adminEmailSent,
+      customerEmailSent,
+    }),
+    {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    }
+  );
 }
