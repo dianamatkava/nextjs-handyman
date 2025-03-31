@@ -99,8 +99,6 @@ export async function POST(request: Request) {
       },
     };
 
-    console.log("Attempting to send email with options:", mailOptions);
-
     const info = await transporter.sendMail(mailOptions);
     console.log("Email sent successfully! Response:", {
       messageId: info.messageId,
