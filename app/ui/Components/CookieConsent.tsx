@@ -4,9 +4,7 @@ import Link from "next/link";
 
 export default function CookieConsent() {
   const [showConsent, setShowConsent] = useState(false);
-  const [consentType, setConsentType] = useState<"all" | "essential" | null>(
-    null
-  );
+  const [, setConsentType] = useState<"all" | "essential" | null>(null);
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
@@ -42,8 +40,8 @@ export default function CookieConsent() {
           <h3 className="text-lg font-semibold">Cookie Settings</h3>
           <p className="text-sm leading-relaxed max-w-3xl">
             We use cookies to enhance your browsing experience, serve
-            personalized content, and analyze our traffic. By clicking "Accept
-            All", you consent to our use of cookies.
+            personalized content, and analyze our traffic. By clicking
+            &quot;Accept All&quot;, you consent to our use of cookies.
           </p>
           <div className="text-sm">
             Read our{" "}
