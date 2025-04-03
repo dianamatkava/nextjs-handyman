@@ -2,6 +2,9 @@ import "@/app/ui/global.css";
 import HeroHeader from "@/app/ui/Header/HeroHeader";
 import Footer from "@/app/ui/Footer/Footer";
 import { Metadata } from "next";
+import GoogleAnalytics from "./ui/Components/GoogleAnalytics";
+import Script from "next/script";
+import CookieConsent from "./ui/Components/CookieConsent";
 
 // Add this JSON-LD script for Schema.org metadata
 const schemaData = {
@@ -70,24 +73,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Force www subdomain */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            if (window.location.hostname === 'alxhandyman.com') {
-              window.location.href = 'https://www.alxhandyman.com' + window.location.pathname;
-            }
-          `,
-          }}
-        />
-        <script
+        <Script
+          id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
+        <link rel="icon" href="/favicon.ico" />
+        <GoogleAnalytics />
       </head>
       <body className={`antialiased`}>
         <HeroHeader />
         {children}
+        <CookieConsent />
         <Footer />
       </body>
     </html>
