@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-export default function Thumbtack() {
+export default function Thumbtack({ mode = "dark" }: { mode?: string }) {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
@@ -17,7 +17,7 @@ export default function Thumbtack() {
 
   return (
     <div
-      className="widget w-fit inline-flex gap-2 justify-center items-center gap-8 pl-8"
+      className="widget w-fit flex flex-col gap-2 justify-center items-center"
       id="tt-review-widget-star"
     >
       <a
@@ -28,19 +28,53 @@ export default function Thumbtack() {
         <Image
           src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg"
           alt="Thumbtack"
-          className="tt-logo brightness-0 invert"
-          width={200}
-          height={200}
+          className={`tt-logo ${mode == "dark" ? "brightness-0 invert" : ""}`}
+          width={120}
+          height={120}
         />
       </a>
 
       <div id="tt-dynamic" className="w-full flex inline-flex gap-1">
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-        <span className="pl-2 text-sm text-white font-['Plus Jakarta Sans'] tracking-tight">
+        <Image
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg"
+          alt="star"
+          width={16}
+          height={16}
+          className="star-icon"
+        />
+        <Image
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg"
+          alt="star"
+          width={16}
+          height={16}
+          className="star-icon"
+        />
+        <Image
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg"
+          alt="star"
+          width={16}
+          height={16}
+          className="star-icon"
+        />
+        <Image
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg"
+          alt="star"
+          width={16}
+          height={16}
+          className="star-icon"
+        />
+        <Image
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg"
+          alt="star"
+          width={16}
+          height={16}
+          className="star-icon"
+        />
+        <span
+          className={`pl-2 text-xs font-['Plus Jakarta Sans'] tracking-tight ${
+            mode == "dark" ? "text-white" : "text-black"
+          }`}
+        >
           14 reviews
         </span>
       </div>

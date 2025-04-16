@@ -1,6 +1,7 @@
 import SectionHeader from "@/app/ui/Components/SectionHeader";
 import { FaRegCommentDots } from "react-icons/fa";
 import HeaderH1 from "@/app/ui/Components/HeaderH1";
+import Thumbtack from "../Components/Thumbtack";
 
 export default function TestimonialHeader() {
   return (
@@ -19,6 +20,9 @@ export default function TestimonialHeader() {
           project. Their stories highlight honest, reliable service that
           transforms everyday spaces into comfortable homes.
         </div>
+      </div>
+      <div className="flex justify-center items-center gap-2 pt-4">
+        <Thumbtack mode="light" />
       </div>
       {/*<div className="justify-start items-end gap-5 inline-flex">*/}
       {/*  <CTAPrimary/>*/}
