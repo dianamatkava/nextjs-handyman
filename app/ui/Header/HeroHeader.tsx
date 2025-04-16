@@ -1,8 +1,7 @@
 import Header from "@/app/ui/Header/Header";
 import CTAGroup from "@/app/ui/Components/CTAGroup";
 import Profile from "@/app/ui/Components/Profile";
-import StartRating from "@/app/ui/Components/StartRating";
-
+import Thumbtack from "@/app/ui/Components/Thumbtack";
 export default function HeroHeader() {
   return (
     <div
@@ -63,10 +62,11 @@ export default function HeroHeader() {
                 </div>
               </CTAGroup>
             </div>
-            <div className=" w-full h-fit flex flex-col items-center justify-center gap-5">
+            <div className=" w-full h-fit flex flex-col items-center justify-center gap-6">
               <div className="w-full h-fit flex items-center justify-center gap-8">
-                <span className="text-xxlg font-semibold text-white">4.9</span>
-                <StartRating rating={4} />
+                <Thumbtack />
+                {/* <span className="text-xxlg font-semibold text-white">4.9</span>
+                <StartRating rating={4} /> */}
               </div>
               <div className="w-full h-fit flex items-center justify-center gap-8">
                 <div className="max-w-[600px] self-stretch text-center text-[#e4e4e4] text-xs sm:text-sm font-medium font-['Plus Jakarta Sans'] sm:leading-6">
