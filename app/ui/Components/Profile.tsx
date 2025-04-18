@@ -23,11 +23,11 @@ export default function Profile({
           className="object-cover"
         />
       </div>
-      <div className="flex-col justify-start items-start gap-0.5 inline-flex">
+      <div className="flex-col justify-start items-start gap-0 inline-flex">
         <div className="justify-center items-center gap-3 inline-flex">
           <div
             className={
-              "w-fit text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight " +
+              "w-fit text-sm font-semibold font-['Plus Jakarta Sans'] tracking-tight" +
               `${mode == "dark" ? "text-white" : "text-black"}`
             }
           >
@@ -37,7 +37,7 @@ export default function Profile({
         <div
           className={
             "text-xs font-medium font-['Plus Jakarta Sans'] " +
-            `${mode == "dark" ? "text-[#e4e4e4]" : "text-black"}`
+            `${mode == "dark" ? "text-[#e4e4e4]" : "text-gray-600"}`
           }
         >
           {title}

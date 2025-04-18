@@ -61,4 +61,13 @@ export const reviews = [
     service: "Furniture Repair",
     image: "/reviews/8fb610f1d6075ad01a59f582c2f9bb55.jpg",
   },
+  {
+    id: 8,
+    name: "Shane S.",
+    review:
+      "Alex was a life saver! He replaced an entire door frame and threshold for me. Great work and the result was perfect. Highly recommend him for any handyman needs.",
+    rating: 5,
+    service: "Furniture Repair",
+    image: "/reviews/incognito.svg",
+  },
 ];

@@ -35,3 +35,53 @@ html {
   filter: invert(48%) sepia(100%) saturate(1000%) hue-rotate(360deg)
     brightness(100%);
 }
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-slide {
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.swiper-scrollbar {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(254, 120, 0) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(254, 120, 0) !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: grey !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: rgb(219, 219, 219, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: auto !important;
+  position: absolute !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+}
